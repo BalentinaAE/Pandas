@@ -1,0 +1,64 @@
+Resumen de Pasos y Comandos para Git y GitHub
+Instalar Git (si no lo tienes instalado):
+
+Asegúrate de tener Git instalado en tu computadora.
+Configurar tu usuario de Git:
+
+bash
+Copiar código
+git config --global user.name "Tu Nombre"
+git config --global user.email "tu_email@gmail.com"
+Crear un nuevo repositorio local:
+
+Ve a la carpeta donde deseas crear el proyecto.
+bash
+Copiar código
+cd C:\Ruta\A\Tu\Carpeta
+git init
+Agregar archivos al repositorio:
+
+Crea o mueve archivos a la carpeta del repositorio y luego agrégales al área de preparación (staging area).
+bash
+Copiar código
+git add archivo1.txt archivo2.py
+# O para agregar todos los archivos
+git add .
+Realizar un commit:
+
+bash
+Copiar código
+git commit -m "Mensaje del commit"
+Ver el historial de commits:
+
+bash
+Copiar código
+git log
+Crear un archivo de volcado del historial de commits:
+
+bash
+Copiar código
+git log >> dump.txt
+Agregar el archivo dump.txt al repositorio:
+
+bash
+Copiar código
+git add dump.txt
+git commit -m "Añadiendo el archivo dump.txt con el historial de commits"
+Configurar el repositorio remoto en GitHub:
+
+Ve a GitHub y crea un nuevo repositorio. Luego, copia la URL del repositorio.
+bash
+Copiar código
+git remote add origin https://github.com/TuUsuario/nombre_del_repositorio.git
+Subir tus cambios al repositorio en GitHub:
+
+bash
+Copiar código
+git push -u origin master
+Notas Adicionales
+Asegúrate de reemplazar "TuUsuario" y "nombre_del_repositorio" con tu nombre de usuario de GitHub y el nombre del repositorio que creaste.
+Cuando trabajes en un proyecto, es buena práctica hacer commits frecuentes con mensajes claros para describir los cambios realizados.
+Si tienes cambios no preparados y deseas subirlos, usa git add <archivo> y luego git commit nuevamente antes de hacer el push.
+Verificación
+Después de hacer git push, visita tu repositorio en GitHub para verificar que los archivos y el historial de commits estén correctamente reflejados.
+Este resumen debería servirte como guía para trabajar con Git y GitHub. Si necesitas más detalles sobre algún paso específico o cualquier otra cosa, ¡hazmelo saber!
