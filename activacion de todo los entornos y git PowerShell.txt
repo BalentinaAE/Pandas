@@ -1,0 +1,228 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. Todos los derechos reservados.
+
+Instale la versión más reciente de PowerShell para obtener nuevas características y mejoras. https://aka.ms/PSWindows
+
+PS C:\Users\BalentinaAE> cd PYTHON
+PS C:\Users\BalentinaAE\PYTHON> cd Projects
+PS C:\Users\BalentinaAE\PYTHON\Projects> git log >> dump.txt
+PS C:\Users\BalentinaAE\PYTHON\Projects> notepad dump.txt
+PS C:\Users\BalentinaAE\PYTHON\Projects> git add dump.txt
+PS C:\Users\BalentinaAE\PYTHON\Projects> git commit -m "Añadir archivo dump.txt con el log de Git"
+[master b1fd124] Añadir archivo dump.txt con el log de Git
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+PS C:\Users\BalentinaAE\PYTHON\Projects> git push origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/BalentinaAE/Projects.git'
+PS C:\Users\BalentinaAE\PYTHON\Projects> git pull origin main
+fatal: couldn't find remote ref main
+PS C:\Users\BalentinaAE\PYTHON\Projects>  git branch -r
+  origin/master
+PS C:\Users\BalentinaAE\PYTHON\Projects> git pull origin master
+From https://github.com/BalentinaAE/Projects
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+PS C:\Users\BalentinaAE\PYTHON\Projects> dir
+
+
+    Directorio: C:\Users\BalentinaAE\PYTHON\Projects
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----      2/11/2024  12:17 a. m.                .ipynb_checkpoints
+da----     27/10/2024  12:06 p. m.                TxADM
+-a----       3/11/2024  6:32 p. m.           4814 dump.txt
+-a----      1/11/2024  11:00 p. m.           2183 Resumen de Pasos y Comandos para Gi.txt
+-a----       2/11/2024  1:14 a. m.          12086 Taller_python.ipynb
+-a----      25/10/2024  7:30 p. m.           7493 terminal python promer clase profesor hig hub.txt
+
+
+PS C:\Users\BalentinaAE\PYTHON\Projects> git add dump.txt
+PS C:\Users\BalentinaAE\PYTHON\Projects> t commit -m "Añadir archivo dump.txt con el log de Git"
+t : El término 't' no se reconoce como nombre de un cmdlet, función, archivo de script o programa ejecutable.
+Compruebe si escribió correctamente el nombre o, si incluyó una ruta de acceso, compruebe que dicha ruta es correcta e
+inténtelo de nuevo.
+En línea: 1 Carácter: 1
++ t commit -m "Añadir archivo dump.txt con el log de Git"
++ ~
+    + CategoryInfo          : ObjectNotFound: (t:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+PS C:\Users\BalentinaAE\PYTHON\Projects> git commit -m "Añadir archivo dump.txt con el log de Git"
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+        modified:   TxADM (modified content, untracked content)
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\BalentinaAE\PYTHON\Projects> git push origin mastergit push origin master
+error: src refspec mastergit does not match any
+error: src refspec push does not match any
+error: src refspec origin does not match any
+error: failed to push some refs to 'https://github.com/BalentinaAE/Projects.git'
+PS C:\Users\BalentinaAE\PYTHON\Projects> dir
+
+
+    Directorio: C:\Users\BalentinaAE\PYTHON\Projects
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----      2/11/2024  12:17 a. m.                .ipynb_checkpoints
+da----     27/10/2024  12:06 p. m.                TxADM
+-a----       3/11/2024  6:32 p. m.           4814 dump.txt
+-a----      1/11/2024  11:00 p. m.           2183 Resumen de Pasos y Comandos para Gi.txt
+-a----       3/11/2024  6:45 p. m.          12245 Taller_python.ipynb
+-a----      25/10/2024  7:30 p. m.           7493 terminal python promer clase profesor hig hub.txt
+
+
+PS C:\Users\BalentinaAE\PYTHON\Projects> git add dump.txt
+PS C:\Users\BalentinaAE\PYTHON\Projects> git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+        modified:   .ipynb_checkpoints/Taller_python-checkpoint.ipynb
+        modified:   Taller_python.ipynb
+        modified:   TxADM (modified content, untracked content)
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\BalentinaAE\PYTHON\Projects> git add dump.txt
+PS C:\Users\BalentinaAE\PYTHON\Projects> git status
+>> git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+        modified:   .ipynb_checkpoints/Taller_python-checkpoint.ipynb
+        modified:   Taller_python.ipynb
+        modified:   TxADM (modified content, untracked content)
+
+no changes added to commit (use "git add" and/or "git commit -a")
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+        modified:   .ipynb_checkpoints/Taller_python-checkpoint.ipynb
+        modified:   Taller_python.ipynb
+        modified:   TxADM (modified content, untracked content)
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\BalentinaAE\PYTHON\Projects> git add Taller_python.ipynb
+>> git add Taller_python.ipynb
+warning: in the working copy of 'Taller_python.ipynb', LF will be replaced by CRLF the next time Git touches it
+PS C:\Users\BalentinaAE\PYTHON\Projects> git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   Taller_python.ipynb
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+        modified:   .ipynb_checkpoints/Taller_python-checkpoint.ipynb
+        modified:   TxADM (modified content, untracked content)
+
+PS C:\Users\BalentinaAE\PYTHON\Projects> git commit -m "Actualizar Taller_python.ipynb"
+[master aa3742a] Actualizar Taller_python.ipynb
+ 1 file changed, 12 insertions(+), 4 deletions(-)
+PS C:\Users\BalentinaAE\PYTHON\Projects> git push origin master
+Enumerating objects: 14, done.
+Counting objects: 100% (14/14), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (11/11), done.
+Writing objects: 100% (11/11), 5.85 KiB | 997.00 KiB/s, done.
+Total 11 (delta 4), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (4/4), completed with 1 local object.
+To https://github.com/BalentinaAE/Projects.git
+   817ebff..aa3742a  master -> master
+PS C:\Users\BalentinaAE\PYTHON\Projects> git add dump.txt
+PS C:\Users\BalentinaAE\PYTHON\Projects> git commit -m "Añadir dump.txt con el log de Git"
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+        modified:   .ipynb_checkpoints/Taller_python-checkpoint.ipynb
+        modified:   Taller_python.ipynb
+        modified:   TxADM (modified content, untracked content)
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\BalentinaAE\PYTHON\Projects> git add Taller_python.ipynb
+warning: in the working copy of 'Taller_python.ipynb', LF will be replaced by CRLF the next time Git touches it
+PS C:\Users\BalentinaAE\PYTHON\Projects> git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   Taller_python.ipynb
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+        modified:   .ipynb_checkpoints/Taller_python-checkpoint.ipynb
+        modified:   TxADM (modified content, untracked content)
+
+PS C:\Users\BalentinaAE\PYTHON\Projects> git commit -m "Actualizar Taller_python.ipynb"
+[master 64cbd5d] Actualizar Taller_python.ipynb
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+PS C:\Users\BalentinaAE\PYTHON\Projects> git push origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 422 bytes | 422.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/BalentinaAE/Projects.git
+   aa3742a..64cbd5d  master -> master
+PS C:\Users\BalentinaAE\PYTHON\Projects> git add Taller_python.ipynb
+warning: in the working copy of 'Taller_python.ipynb', LF will be replaced by CRLF the next time Git touches it
+PS C:\Users\BalentinaAE\PYTHON\Projects>
+>> git status^C
+PS C:\Users\BalentinaAE\PYTHON\Projects> git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   Taller_python.ipynb
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+        modified:   .ipynb_checkpoints/Taller_python-checkpoint.ipynb
+        modified:   TxADM (modified content, untracked content)
+
+PS C:\Users\BalentinaAE\PYTHON\Projects> git commit -m "Actualizar Taller_python.ipynb"
+[master a7a3726] Actualizar Taller_python.ipynb
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+PS C:\Users\BalentinaAE\PYTHON\Projects>  git push origin master
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 319 bytes | 319.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/BalentinaAE/Projects.git
+   64cbd5d..a7a3726  master -> master
+PS C:\Users\BalentinaAE\PYTHON\Projects> git add dump.txt
+PS C:\Users\BalentinaAE\PYTHON\Projects> git commit -m "Añadir dump.txt con el log de Git"
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+  (commit or discard the untracked or modified content in submodules)
+        modified:   .ipynb_checkpoints/Taller_python-checkpoint.ipynb
+        modified:   TxADM (modified content, untracked content)
+
+no changes added to commit (use "git add" and/or "git commit -a")
+PS C:\Users\BalentinaAE\PYTHON\Projects> git push origin master
+Everything up-to-date
